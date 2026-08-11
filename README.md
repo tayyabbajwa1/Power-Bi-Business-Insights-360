@@ -33,7 +33,7 @@ To address these challenges, a centralized **Business Insights 360** analytics s
 
 ---
 
-# 💡 Solution
+## 💡 Solution
 
 The solution provides a unified analytical environment where stakeholders can explore performance across five major business functions:
 
@@ -92,8 +92,6 @@ Contains financial and cost-related information required for profitability and P
 | `pre_invoice_deductions` | Discounts and deductions applied before invoicing |
 | `post_invoice_deductions` | Post-invoice deductions and other adjustments |
 
----
-
 ## 📊 Excel Data Sources
 
 Additional business inputs were provided through Excel datasets and incorporated into the Power BI data model.
@@ -115,7 +113,7 @@ The data preparation workflow included:
 - Importing supporting Excel datasets
 - Cleaning and transforming data using **Power Query**
 - Standardizing data types and formats
-- Handling data preparation and transformation requirements
+- Preparing datasets for analytical reporting
 - Creating relationships between fact and dimension tables
 - Developing calculated measures using **DAX**
 - Building a centralized analytical data model for reporting
@@ -134,9 +132,9 @@ The model consists of:
 - **Dimension tables** — Descriptive attributes for customers, products, markets, and other business entities
 - **Supporting datasets** — Targets, market share, pricing, cost, and deduction information
 
-### Entity Relationship Diagram
+### Data Modeling
 
-![Business Insights 360 Data Model](./Resources/Data%20Modelling.png)
+![Business Insights 360 Data Model](./Resources/Data%20Modeling.png)
 
 The model enables analysis across multiple dimensions, including:
 
@@ -157,18 +155,29 @@ The model enables analysis across multiple dimensions, including:
 
 # 📊 Dashboard Architecture
 
-The Business Insights 360 report consists of the following major views:
+The Business Insights 360 report is organized into five major analytical views, all accessible through a centralized **Home View**.
 
-```text
-                    Business Insights 360
-                            │
-                        🏠 Home View
-                            │
-       ┌────────────┬───────┼───────┬──────────────┐
-       │            │       │       │              │
-    Finance       Sales  Marketing  Supply Chain  Executive
+### Report Structure
 
-    # 🏠 Home View
+**Business Insights 360**
+
+→ 🏠 **Home View**
+
+→ 💰 **Finance View**
+
+→ 📈 **Sales View**
+
+→ 🎯 **Marketing View**
+
+→ 🚚 **Supply Chain View**
+
+→ 🧑‍💼 **Executive View**
+
+Each view is designed around the analytical requirements of its respective business function.
+
+---
+
+# 🏠 Home View
 
 The **Home View** serves as the central navigation hub of the Business Insights 360 report.
 
@@ -352,52 +361,65 @@ This project incorporates a range of Power BI capabilities to create an interact
 
 # 📁 Repository Structure
 
-```text
-Power-Bi-Business-Insights-360/
-│
-├── Report/
-│   └── Business Insights 360.pbix
-│
-├── Resources/
-│   ├── Data Model.png
-│   ├── ExecutiveView.gif
-│   ├── FinanceView.gif
-│   ├── HomeView.gif
-│   ├── MarketingView.gif
-│   ├── SalesView.gif
-│   └── SupplyChainView.gif
-│
-├── .gitattributes
-└── README.md
+The repository is organized to separate the Power BI report from supporting project resources.
+
+**Report**
+
+→ `Business Insights 360.pbix`
+
+**Resources**
+
+→ `Data Modeling.png`
+
+→ `HomeView.gif`
+
+→ `FinanceView.gif`
+
+→ `SalesView.gif`
+
+→ `MarketingView.gif`
+
+→ `SupplyChainView.gif`
+
+→ `ExecutiveView.gif`
+
+**Root Files**
+
+→ `.gitattributes`
+
+→ `README.md`
+
+The Power BI report is stored using **Git Large File Storage (Git LFS)** because of the `.pbix` file size.
+
+---
+
 # 📚 Project Resources
 
-## Data Model
+## 🧩 Data Modeling
 
-[View Data Model](./Resources/Data%20Model.png)
+[View Data Modeling](./Resources/Data%20Modeling.png)
 
-## Dashboard Previews
-
-### 🏠 Home View
+## 🏠 Home View
 
 [View Home View Preview](./Resources/HomeView.gif)
 
-### 💰 Finance View
+## 💰 Finance View
 
 [View Finance View Preview](./Resources/FinanceView.gif)
 
-### 📈 Sales View
+## 📈 Sales View
 
 [View Sales View Preview](./Resources/SalesView.gif)
 
-### 🎯 Marketing View
+## 🎯 Marketing View
 
 [View Marketing View Preview](./Resources/MarketingView.gif)
 
-### 🚚 Supply Chain View
+## 🚚 Supply Chain View
 
 [View Supply Chain View Preview](./Resources/SupplyChainView.gif)
 
-### 🧑‍💼 Executive View
+## 🧑‍💼 Executive View
 
 [View Executive View Preview](./Resources/ExecutiveView.gif)
 
@@ -474,7 +496,7 @@ This project provided hands-on experience in developing an end-to-end business i
 
 # 🙏 Acknowledgements
 
-This project was developed as part of the **Codebasics Power BI Data Analytics Course**(https://codebasics.io/courses/power-bi-data-analysis-with-end-to-end-project) and follows a practical, business-oriented approach to developing an end-to-end analytics solution.
+This project was developed as part of the [**Codebasics Power BI Data Analytics Course**](https://codebasics.io/courses/power-bi-data-analysis-with-end-to-end-project) and follows a practical, business-oriented approach to developing an end-to-end analytics solution.
 
 Special thanks to the **Codebasics** team for providing the project framework, learning resources, and business case that supported the development of this portfolio project.
 
