@@ -136,7 +136,7 @@ The model consists of:
 
 ### Entity Relationship Diagram
 
-![Business Insights 360 Data Model](./Resources/Data%20Model.png)
+![Business Insights 360 Data Model](./Resources/Data%20Modelling.png)
 
 The model enables analysis across multiple dimensions, including:
 
