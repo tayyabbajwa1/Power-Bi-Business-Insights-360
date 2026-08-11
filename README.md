@@ -431,8 +431,6 @@ Explore the fully interactive **Business Insights 360** dashboard:
 
 👉 **[View Interactive Power BI Report](https://app.powerbi.com/groups/me/reports/67a42ed1-f24f-4457-92ce-239d8047b5e1/fd8a3ea9e0002b738294?experience=power-bi)**
 
-> Replace `YOUR_POWER_BI_LIVE_LINK_HERE` with your published Power BI report URL.
-
 ---
 
 # 📥 Power BI Report File
