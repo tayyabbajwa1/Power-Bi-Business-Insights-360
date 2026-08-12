@@ -429,7 +429,7 @@ The Power BI report is stored using **Git Large File Storage (Git LFS)** because
 
 Explore the fully interactive **Business Insights 360** dashboard:
 
-👉 **[View Interactive Power BI Report](https://app.powerbi.com/groups/me/reports/67a42ed1-f24f-4457-92ce-239d8047b5e1/fd8a3ea9e0002b738294?experience=power-bi)**
+👉 **[View Interactive Power BI Report](https://app.powerbi.com/view?r=eyJrIjoiMDVlNDY0ODctZDQyMS00MGUxLWE5NTEtZWEwMGQwNjM1MWUzIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)**
 
 ---
 
